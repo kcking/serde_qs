@@ -9,6 +9,8 @@ use crate::error::Error as QsError;
 use actix_web;
 #[cfg(feature = "actix2")]
 use actix_web2 as actix_web;
+#[cfg(feature = "actixbeta")]
+use actix_web_beta as actix_web;
 
 use actix_web::dev::Payload;
 use actix_web::{Error as ActixError, FromRequest, HttpRequest, HttpResponse, ResponseError};

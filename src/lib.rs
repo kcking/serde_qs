@@ -177,7 +177,7 @@
 #[macro_use]
 extern crate serde;
 
-#[cfg(any(feature = "actix", feature = "actix2"))]
+#[cfg(any(feature = "actix", feature = "actix2", feature = "actixbeta"))]
 pub mod actix;
 mod de;
 mod error;
